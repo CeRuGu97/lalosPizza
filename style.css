@@ -1,0 +1,192 @@
+:root {
+    --backGroundColor: #FFF2DF;
+    --coffe: #66513D;
+    --desvanesido: rgba(255, 255, 255, 0.822);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Caveat', cursive;
+}
+body{
+    background-color: var(--backGroundColor);
+    background-image: url('./brackgraundLefth.jpg');
+    background-size: initial;
+    background-position: 0px 70px;
+    background-repeat: no-repeat;
+}
+
+body::before{
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:950px;
+    background-image: url('./brackgraundLefth.jpg');
+    background-size: initial;
+    background-repeat: no-repeat;
+}
+.body2{
+    /* content: ''; */
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 400px;
+    /* right: 100px; */
+    background-image:  url('./backgraund-right.jpg');
+    background-size: initial;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+/* 
+    usa position absolut como su estunieras hacuiendo los dibujos del gatitu y asi 
+
+ */
+.body__menu{
+    background-color: var(--desvanesido);
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+}
+.header{
+    width: 90%;
+    height: auto;
+    text-align: center;
+    background-color: var(--coffe);
+    border-radius: 10px;
+    margin: 25px 0px;
+    padding: 5px 0px;
+}
+.header__cub{
+    width: 98%;
+    height: 98%;
+    border: 2px dashed var(--backGroundColor);
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+.header__cub--title{
+    font-size: 5rem;
+    color: var(--backGroundColor);
+}
+.header__cub--subtitle{
+    font-size: 2.5rem;
+    color: var(--backGroundColor);
+}
+.body__menu{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.main__section--title{
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px 0px;
+    border-top: 50px;   
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.main__section--title > h2 {
+    font-size: 5rem;
+    color: var(--coffe);
+    padding-right: 60px;
+    border-bottom: 3px solid var(--coffe);
+}
+.main__section--title > h5 {
+    font-size: 3rem;
+    color: var(--coffe);
+    padding: 15px 5px;
+    padding-right: 28px;
+}
+.pizza__table--container{
+    width: 90%;
+    min-width: 230;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+.pizza__table--container table {
+    width: 100%;
+    height: 100%;
+}
+.pizza__table--container tr {
+    text-align: center;
+    
+}
+.pizza__table--container td {
+    font-size: 2rem;
+    line-height: 1.9rem;
+    color: var(--coffe);
+    padding: 5px 0px 15px 0px;
+}
+.pizza__table--container .table_left-right{
+    font-size: 2.8rem;
+}
+footer{
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+}
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul {
+    font-size: 2.5rem;
+    line-height: 1.8rem;
+    list-style: none;
+}
+footer .right ul{
+    font-size: 2.5rem;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li {
+    margin: 10px 0;
+}
+.left a{
+    text-decoration: none;
+    color: var(--coffe);
+}
+.left .fa {
+    display: inline-block;
+    background-image: url('https://img.icons8.com/android/24/000000/facebook-new.png');
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.left .wh {
+    display: inline-block;
+    background-image: url('https://img.icons8.com/pastel-glyph/64/000000/whatsapp--v2.png');
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.right li {
+    margin: 10px 0;
+}
+.right a{
+    text-decoration: none;
+    color: var(--coffe);
+}
